@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spider-man: Far from Home</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>SPIDER-MAN: FAR FROM HOME</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_spider2.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Spider-Man: Far from Home</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Jon Watts</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Tom Holland, Jake Gyllenhaal, Zendaya, Jacob Batalon</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>?</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Peter Parker decide dejar sus heroicidades a un lado durante unas pocas semanas, y sale de viaje por Europa con sus amigos Ned, MJ y el resto de compañeros de instituto. Pero las vacaciones de verano darán un giro inesperado cuando aparezca Nick Furia, que tiene trabajo para Peter. Varias criaturas elementales, seres hechos de arena, piedra, agua y fuego, están creando el caos y la destrucción en todo el continente. El joven Hombre Araña deberá desentrañar el misterio de estos ataques. Solo y con sus amigos en apuros, además de con la nueva aparición de Mysterio, Peter tendrá que decidirse a dar la cara. </td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "spider2"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

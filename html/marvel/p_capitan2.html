@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capitán América: Soldado de Invierno</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>CAPITAN AMERICA: SOLDADO DE INVIERNO</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_capitan2.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Captain America: The Winter Soldier</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Anthony Russo, Joe Russo</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2014</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Chris Evans, Scarlett Johansson, Anthony Mackie, Samuel L. Jackson</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>136 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Tras los devastadores acontecimientos acaecidos en Nueva York con Los Vengadores, Steve Rogers, alias el Capitán América, vive tranquilamente en Washington D.C. intentando adaptarse al mundo moderno. Pero cuando atacan a un colega de S.H.I.E.L.D., Steve se ve envuelto en una trama de intrigas que representa una amenaza para el mundo. Se unirá entonces a la Viuda Negra para desenmascarar a los conspiradores. Cuando por fin descubren la magnitud de la trama, se unirá a ellos el Halcón. Los tres tendrán que enfrentarse a un enemigo inesperado y extraordinario: el Soldado de Invierno.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "capitan2"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

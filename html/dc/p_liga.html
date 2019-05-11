@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liga de la Justicia</title>
+	<link rel="stylesheet" type="text/css" href="../../css/dc/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuDC.html"><img src="../../imagenes/logopng.png""></a>
+	</header>
+
+	<h2>LIGA DE LA JUSTICIA</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/dc/poster_ligajusticia.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Justice League</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Zack Snyder</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2017</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Ben Affleck, Henry Cavill, Amy Adams, Gal Gadot</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>120 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "liga_justicia"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+					
+					
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasDC.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

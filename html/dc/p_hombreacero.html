@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>El hombre de acero</title>
+	<link rel="stylesheet" type="text/css" href="../../css/dc/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuDC.html"><img src="../../imagenes/logopng.png""></a>
+	</header>
+
+	<h2>EL HOMBRE DE ACERO</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/dc/poster_hombreacero.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Man of Steel</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Zack Snyder</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2013</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Henry Cavill, Amy Adams, Michael Shannon, Diane Lane</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>143 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Desde Krypton, un lejano planeta muy avanzado tecnológicamente, un bebé es enviado en una cápsula a través del espacio a la Tierra para que viva entre los humanos. Educado en una granja en Kansas en los valores de sus padres adoptivos, Martha y Jonathan Kent, el joven Clark Kent comienza desde niño a desarrollar poderes sobrehumanos, y al llegar a la edad adulta llega a la conclusión de que esos poderes le exigen grandes responsabilidades, para proteger no sólo a los que quiere, sino también para representar una esperanza para el mundo.</td>
+				</tr>
+			</table>
+			
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "el_hombre_de_acero"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasDC.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

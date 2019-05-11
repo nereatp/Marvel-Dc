@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thor: El mundo Oscuro</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>THOR: EL MUNDO OSCURO</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_thor2.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Thor: The Dark World</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Alan Taylor</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2013</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Chris Hemsworth, Natalie Portman, Tom Hiddleston, Anthony Hopkins</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>112 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Thor lucha por restablecer el orden en el cosmos, pero una antigua raza liderada por el vengativo Malekith regresa con el propósito de volver a sumir el universo en la oscuridad. Se trata de un villano con el que ni siquiera Odín y Asgard se atreven a enfrentarse; por esa razón, Thor tendrá que emprender un viaje muy peligroso, durante el cual se reunirá con Jane Foster y la obligará a sacrificarlo todo para salvar el mundo.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "thor2"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guardianes de la Galaxia</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>GUARDIANES DE LA GALAXIA</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_guardianes1.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Guardians of the Galaxy</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>James Gunn</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2014</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Chris Pratt, Zoe Saldana, Dave Bautista, Bradley Cooper</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>118 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>El temerario aventurero Peter Quill es objeto de un implacable cazarrecompensas después de robar una misteriosa esfera codiciada por Ronan, un poderoso villano cuya ambición amenaza todo el universo. Para poder escapar del incansable Ronan, Quill se ve obligado a pactar una complicada tregua con un cuarteto de disparatados inadaptados: Rocket, un mapache armado con un rifle, Groot, un humanoide con forma de árbol, la letal y enigmática Gamora y el vengativo Drax the Destroyer. Pero cuando Quill descubre el verdadero poder de la esfera, deberá hacer todo lo posible para derrotar a sus extravagantes rivales en un intento desesperado de salvar el destino de la galaxia.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "guardianes1"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

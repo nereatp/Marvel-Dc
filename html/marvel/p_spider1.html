@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spider-Man: Homecoming</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>SPIDER-MAN: HOMECOMING</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_spider1.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Spider-Man: Homecoming</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Jon Watts</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2017</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Tom Holland, Michael Keaton, Robert Downey Jr., Jon Favreau</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>133 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Peter Parker comienza a experimentar su recién descubierta identidad como el superhéroe Spider-Man. Después de la experiencia vivida con los Vengadores, Peter regresa a casa, donde vive con su tía. Bajo la atenta mirada de su mentor Tony Stark, Peter intenta mantener una vida normal como cualquier joven de su edad, pero interrumpe en su rutina diaria el nuevo villano Vulture y, con él, lo más importante de la vida de Peter comenzará a verse amenazado.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "spider1"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

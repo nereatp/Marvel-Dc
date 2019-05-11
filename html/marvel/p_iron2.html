@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iron Man 2</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>IRON MAN 2</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_ironman2.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Iron Man 2</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Jon Favreau</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2010</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Robert Downey Jr.,  Mickey Rourke, Gwyneth Paltrow,  Don Cheadle</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>124 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>El mundo ya sabe que el multimillonario Tony Stark es Iron Man, el superhéroe enmascarado. A pesar de las presiones del gobierno, la prensa y la opinión pública para que comparta su tecnología con el ejército, Tony es reacio a desvelar los secretos de la armadura de Iron Man, porque teme que esa información caiga en en manos de irresponsables. Con Pepper Potts y James “Rhodey” Rhodes a su lado, Tony forja alianzas nuevas y se enfrenta a nuevas y poderosas fuerzas.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "iron2"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

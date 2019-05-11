@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escuadrón Suicida</title>
+	<link rel="stylesheet" type="text/css" href="../../css/dc/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuDC.html"><img src="../../imagenes/logopng.png""></a>
+	</header>
+
+	<h2>ESCUADRÓN SUICIDA</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/dc/poster_escuadron.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Suicide Squad</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>David Ayer</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2016</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Will Smith, Jared Leto, Margot Robbie, Joel Kinnaman</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>123 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Mientras el gobierno de EE.UU no tiene claro cómo responder a una visita alienígena a la Tierra con intenciones malignas, Amanda 'El Muro' Waller, la líder de la agencia secreta A.R.G.U.S., ofrece una curiosa solución: reclutar a los villanos más crueles, con habilidades letales e incluso mágicas, para que trabajen para ellos. Sin demasiadas opciones a dar una negativa, los ocho supervillanos más peligrosos del mundo acceden a colaborar con el Ejecutivo en peligrosas misiones secretas, casi suicidas, para así lograr limpiar su expediente. </td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "escuadron_suicida"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+					
+					
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasDC.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wonder Woman</title>
+	<link rel="stylesheet" type="text/css" href="../../css/dc/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+
+</head>
+<body>
+	<header>
+		<a href="../menuDC.html"><img src="../../imagenes/logopng.png""></a>
+	</header>
+
+	<h2>WONDER WOMAN</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/dc/poster_wonderwoman.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Wonder Woman</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Patty Jenkins</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2017</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Gal Gadot, Chris Pine, Robin Wright, Danny Huston</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>141 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Antes de ser Wonder Woman era Diana, princesa de las Amazonas, entrenada para ser una guerrera invencible. Diana fue criada en una isla paradisíaca protegida. Hasta que un día un piloto norteamericano, que tiene un accidente y acaba en sus costas, le habla de un gran conflicto existente en el mundo [Primera Guerra Mundial]. Diana decide salir de la isla convencida de que puede detener la terrible amenaza. Mientras lucha junto a los hombres en la guerra que acabará con todas las guerras, Diana descubre todos sus poderes y su verdadero destino.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "wonder_woman"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+					
+					
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasDC.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

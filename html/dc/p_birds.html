@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birds of Prey (And The Fantabulous Emancipation of one Harley Quinn)</title>
+	<link rel="stylesheet" type="text/css" href="../../css/dc/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuDC.html"><img src="../../imagenes/logopng.png""></a>
+	</header>
+
+	<h2>BIRDS OF PREY</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/dc/poster_birds.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Birds of Prey (And The Fantabulous Emancipation of one Harley Quinn)</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Cathy Yan</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2020</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Margot Robbie, Mary Elizabeth Winstead, Ewan McGregor, Jurnee Smollett-Bell</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>?</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Después de separarse de Joker, Harley Quinn y otras tres heroínas (Canario Negro, Cazadora y Renée Montoya) unen sus fuerzas para salvar a una niña (Cassandra Cain) del malvado rey del crimen Máscara Negra.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "birds_prey"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+					
+					
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasDC.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

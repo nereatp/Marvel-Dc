@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ant-Man y la Avispa</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>ANT-MAN Y LA AVISPA</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_ant2.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Ant-Man and the Wasp</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Peyton Reed</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2018</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Paul Rudd, Evangeline Lilly, Michael Douglas, Michael Peña</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>118 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Después de "Capitán América: Civil War", Scott Lang lidia con las consecuencias de sus elecciones como superhéroe y padre. Mientras lucha por mantener un equilibrio entre su vida hogareña y sus responsabilidades como Ant-Man, se enfrenta a Hope van Dyne y al Dr. Hank Pym con una nueva misión urgente. Scott debe volver a ponerse el traje y aprender a luchar junto con La Avispa mientras el equipo trabaja en conjunto para descubrir secretos del pasado.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "ant2"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

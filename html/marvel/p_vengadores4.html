@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Los Vengadores: Endgame</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>LOS VENGADORES: ENDGAME</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_vengadores4.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Avengers: Endgame</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Anthony Russo, Joe Russo</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>181 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Después de los eventos devastadores de 'Avengers: Infinity War', el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán reunirse una vez más para intentar deshacer sus acciones y restaurar el orden en el universo de una vez por todas, sin importar cuáles son las consecuencias.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "vengadores4"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

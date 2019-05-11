@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ant-Man</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>ANT-MAN</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_ant1.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Ant-Man</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Peyton Reed</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2015</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Paul Rudd, Michael Douglas, Evangeline Lilly, Corey Stoll</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>117 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Tras abandonar la cárcel, el ladrón y estafador Scott Lang recibe la llamada del misterioso Dr. Hank Pym para realizar un trabajo especial. El científico suministra al joven un traje especial, que le otorgar la capacidad de reducir su tamaño al de un insecto, al tiempo que aumenta considerablemente su fuerza. Con esta nueva arma en su poder, capaz de comunicarse con los insectos, Lang deberá abrazar su héroe interior, olvidar su pasado de delincuente y tratar de salvar al mundo de una terrible amenaza. </td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "ant1"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

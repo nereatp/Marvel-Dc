@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capitana Marvel</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>CAPITANA MARVEL</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_capitana.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Captain Marvel</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Anna Boden, Ryan Fleck</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Brie Larson, Samuel L. Jackson, Jude Law, Ben Mendelsohn</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>125 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>La historia sigue a Carol Danvers mientras se convierte en uno de los héroes más poderosos del universo, cuando la Tierra se encuentra atrapada en medio de una guerra galáctica entre dos razas alienígenas. Situada en los años 90, 'Capitana Marvel' es una historia nueva de un período de tiempo nunca antes visto en la historia del Universo Cinematográfico de Marvel.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "marvel"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

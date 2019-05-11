@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hulk</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>HULK</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_hulk.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>The Incredible Hulk</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Louis Leterrier</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2008</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Edward Norton, Liv Tyler, Tim Roth, William Hurt</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>114 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>El científico Bruce Banner recorre el mundo en busca de un antídoto que le permita librarse de su Alter Ego. Perseguido por el ejército y dominado por su propia rabia, es incapaz de sacarse de la cabeza a Betty Ross, por lo que decide volver a la civilización. Mientras se enfrenta a una extraña criatura, el agente de la KGB Emil Blonsky se expone a una dosis de radiación más intensa que la que convirtió a Bruce en Hulk. Emil hace responsable a Hulk de su terrible situación, y la ciudad de Nueva York se convierte en el escenario de la última batalla entre las dos criaturas más poderosas que jamás pisaron la Tierra.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "hulk"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

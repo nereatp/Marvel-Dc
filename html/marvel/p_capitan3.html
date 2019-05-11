@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capitán América: Civil War</title>
+	<link rel="stylesheet" type="text/css" href="../../css/marvel/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuMarvel.html"><img src="../../imagenes/cabeceraMarvel.png"></a>
+	</header>
+
+	<h2>CAPITAN AMERICA: CIVIL WAR</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/marvel/poster_capitan3.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Captain America: Civil War</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Anthony Russo, Joe Russo</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2016</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Chris Evans, Robert Downey Jr., Sebastian Stan, Scarlett Johansson</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>147 minutos</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Después de que otro incidente internacional involucre a Los Vengadores, causando varios daños colaterales, aumentan las presiones políticas para instaurar un sistema que exija más responsabilidades y que determine cuándo deben contratar los servicios del grupo de superhéroes. Esta nueva situación dividirá a Los Vengadores, mientras intentan proteger al mundo de un nuevo y terrible villano. Tercera entrega de la saga Capitán América.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "capitan3"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasMarvel.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

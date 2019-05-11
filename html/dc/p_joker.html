@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joker</title>
+	<link rel="stylesheet" type="text/css" href="../../css/dc/ficha_peliculas.css">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../../js/loadjson.js"></script>
+</head>
+<body>
+	<header>
+		<a href="../menuDC.html"><img src="../../imagenes/logopng.png""></a>
+	</header>
+
+	<h2>JOKER</h2>
+
+	<aside>
+		<div>
+		 	<img src="../../imagenes/dc/poster_joker.jpg">
+		</div>
+	</aside>
+
+	<section>
+		<div class="cuerpo">
+			<table>
+				<tr>
+					<th>Titulo original</th>
+					<td>Joker</td>
+				</tr>
+				<tr>
+					<th>Director</th>
+					<td>Todd Phillips</td>
+				</tr>
+				<tr>
+					<th>Año</th>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<th>Protagonistas</th>
+					<td>Joaquin Phoenix, Robert De Niro, Frances Conroy, Zazie Beetz</td>
+				</tr>
+				<tr>
+					<th>Duración</th>
+					<td>?</td>
+				</tr>
+				<tr>
+					<th>Sinopsis</th>
+					<td>Arthur Fleck es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma.</td>
+				</tr>
+			</table>
+
+			<script type="text/javascript">
+				var sourc = document.createElement("source");
+
+				loadJSON("/js/trailers.json", function (data){
+					var t = data.trailers;
+					t.forEach(element => {
+						/*console.log(element);*/
+						if(element.pelicula === "joker"){
+						sourc.src = element.enlace;
+						document.getElementById("vid").appendChild(sourc);
+					}
+					});
+					
+					
+				})
+			</script>
+			<video id="vid" controls autoplay>
+			</video>
+
+			<div class="atras">
+				<a href="../peliculasDC.html"><img src="../../imagenes/botonatras.png"></a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
