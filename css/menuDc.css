@@ -1,0 +1,305 @@
+body{
+	background-color: black;
+}
+
+@font-face {
+  font-family: hands;
+  src: url(../fuentes/HandsOversaturation.otf);
+}
+
+header{
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 180px;
+  border: 5px solid black;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+header img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+.container1 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 10%;
+}
+
+.div-img1 {
+  float: left;
+}
+
+.div-img1 .heroes {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+.div-img1 .text1 {
+  font-family: 'Open Sans';
+  padding-top: 20px;
+  color: white;
+  font-size:50px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  transform: translate(0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  opacity: 0;
+  transition: transfom opacity 1.5s;
+}
+
+.div-img1:hover .heroes {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+.div-img1:hover .text1 {
+  transform: translate(0px, -10px);
+  opacity: 1;
+}
+
+.heroes img{
+  width: 26vw;
+  border: ridge 10px #F3F3F3;
+  border-radius: 10px;
+}
+
+
+.container2 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 63%;
+}
+
+.div-img2 {
+  display: inline;
+}
+
+.div-img2 .villanos {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+.div-img2 .text2 {
+   font-family: 'Open Sans';
+  padding-top: 20px;
+  color: white;
+  font-size:50px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  transform: translate(0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  opacity: 0;
+  transition: transfom opacity 1.5s;
+}
+
+.div-img2:hover .villanos {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+.div-img2:hover .text2 {
+  transform: translate(0px, -10px);
+  opacity: 1;
+}
+
+.villanos img{
+  width: 26vw;
+  border: ridge 10px #F3F3F3;
+  border-radius: 10px;
+}
+
+.container3 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 10%;
+  top: 90%;
+}
+
+.div-img3 {
+  float: left;
+}
+
+.div-img3 .historia {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+.div-img3 .text3 {
+  font-family: 'Open Sans';
+  padding-top: 20px;
+  color: white;
+  font-size:50px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  transform: translate(0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  opacity: 0;
+  transition: transfom opacity 1.5s;
+}
+
+.div-img3:hover .historia {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+.div-img3:hover .text3 {
+  transform: translate(0px, -10px);
+  opacity: 1;
+}
+
+.historia img{
+  width: 26vw;
+  border: ridge 10px #F3F3F3;
+  border-radius: 10px;
+}
+
+
+.container4 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 63%;
+  top: 90%;
+}
+
+.div-img4 {
+  display: inline;
+}
+
+.div-img4 .peliculas {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+
+.div-img4 .text4 {
+   font-family: 'Open Sans';
+  padding-top: 20px;
+  color: white;
+  font-size:50px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  transform: translate(0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  opacity: 0;
+  transition: transfom opacity 1.5s;
+}
+
+.div-img4:hover .peliculas {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+.div-img4:hover .text4 {
+  transform: translate(0px, -10px);
+  opacity: 1;
+}
+
+.peliculas img{
+  width: 26vw;
+  border: ridge 10px #F3F3F3;
+  border-radius: 10px;
+}
+
+.atras img{
+  width: 70px;
+  height:70px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  float: left;
+  margin-top: 1100px;
+}

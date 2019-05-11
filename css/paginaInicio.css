@@ -1,0 +1,28 @@
+body{
+	background-color: black;
+}
+
+img#DC{
+	width: 50%;
+	height: 880px;
+
+	overflow:hidden;
+}
+
+img#Marvel{
+	width: 50%;
+	height: 880px;
+
+	float: left;
+
+	overflow:hidden;
+}
+
+img:hover{
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+	overflow:hidden;
+	transition:all .5s ease-in-out;
+}
+
+

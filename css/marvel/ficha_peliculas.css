@@ -1,0 +1,121 @@
+body{
+	background-color: #820000;
+}
+
+@font-face {
+  font-family: hands;
+  src: url(../../fuentes/HandsOversaturation.otf);
+}
+
+@font-face {
+  font-family: bebas;
+  src: url(../../fuentes/BebasNeue-Regular.otf);
+}
+
+@font-face{
+  font-family:god;
+  src: url(../../fuentes/Gobold.otf);
+}
+
+header{
+  background-color: #820000;
+  padding-bottom: 20px;
+}
+
+header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 50px;
+  border: 5px solid #820000;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+header img:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+}
+
+h2{
+  color: white;
+  font-size: 100px;
+  font-family: bebas;
+  margin: 0;
+  text-align: center;
+}
+
+aside{
+  width:400px; 
+  float: left;
+  margin-right: 70px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+aside img{
+  border:solid black 8px;
+  width: 400px;
+  height: 580px;
+}
+
+.cuerpo{
+  margin-left: 540px;
+  margin-right: 90px;
+  margin-top: 35px;
+  height: 600px;
+}
+
+table{
+  width: 100%;
+}
+
+table, td, th{
+  color: white;
+  border:solid #D8D8D8 2px;
+  font-size: 1.5vw;
+  font-family: calibri;
+
+}
+
+td{
+  padding-left: 15px;
+  color: #E8E8E8;
+}
+
+th{
+  color: #FCFCFC;
+}
+
+section p{
+  color: #FCFCFC;;
+  font-size: 1.1vw;
+  font-family: calibri;
+}
+
+video{
+  width: 80%;
+  height: 80%;
+  margin-left: 120px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+
+.atras img{
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+  top: 91%;
+}

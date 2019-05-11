@@ -1,0 +1,179 @@
+body{
+	background-color: #820000;
+}
+
+@font-face {
+  font-family: hands;
+  src: url(../fuentes/HandsOversaturation.otf);
+}
+
+@font-face {
+  font-family: bebas;
+  src: url(../fuentes/BebasNeue-Regular.otf);
+}
+
+@font-face{
+  font-family:god;
+  src: url(../fuentes/Gobold.otf);
+}
+
+header{
+  background-color: #820000;
+  padding-bottom: 50px;
+}
+
+header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 290px;
+  height: 150px;
+  border: 5px solid #820000;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+header img:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+}
+
+
+.verticalmenu {
+  width: 250px;
+  height: 200px;
+  position: relative;
+  float: left;
+  margin: 5px 40px 0 10px;
+  padding-top: 40px;
+  padding-bottom: 40%;
+  position: absolute;
+}
+
+
+.verticalmenu a {
+  background-color: rgba(255,255,255, 0.8);
+  color: black;
+  font-family: god; 
+  display: block;
+  padding: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 10px;
+  border:solid 1px #e6e6e6;
+
+}
+
+
+.verticalmenu a:hover  {
+  background-color: #f2f2f2;
+}
+
+
+.verticalmenu a.active {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+
+.verticalmenu a.contac {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+
+section{
+  font-family: bebas;
+  font-size: 2.5vw;
+  position: relative;
+  margin-left: 19%;
+}
+
+section ul{
+  position: relative;
+  color: white;
+  list-style: none;
+  padding-top: 20px;
+  left: 7%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+section li{
+  padding-bottom: 30px;
+}
+
+section a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+section #r:hover {
+  color: #DF013A;
+}
+section #go:hover {
+  color: #cc9900;
+}
+section #gv:hover {
+  color: #088A08;
+}
+section #gr:hover {
+  color: #A4A4A4;
+}
+section #az:hover {
+  color: #2a2ac5;
+}
+section #n:hover{
+  color: #000000;
+}
+
+section a {
+  transition: color 0.4s linear 0.1s;
+}
+
+
+.menu{
+  width: auto;
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.menu.li{
+  list-style: none;
+  padding-top: 0;
+}
+  
+.menu.a{
+  text-decoration: none;  
+}
+
+.open-hide:hover{
+  cursor: pointer;
+}
+
+.menu{
+  height: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu:hover{
+  height: auto;
+}
+
+.open-hide:hover + .menu{
+  height: auto;
+}
+
+.no-touch .open-hide:hover + .menu{
+    height: auto;
+}
