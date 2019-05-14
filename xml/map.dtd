@@ -1,0 +1,11 @@
+<!ELEMENT pagina (apartado+)>
+<!ELEMENT apartado (seccion+)>
+<!ATTLIST apartado
+          id CDATA #REQUIRED>
+<!ELEMENT seccion (heroe*, villano*, pelicula*)>
+<!ATTLIST seccion
+          id CDATA #REQUIRED>
+<!ELEMENT heroe (nombre)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT villano (nombre)>
+<!ELEMENT pelicula (nombre)>

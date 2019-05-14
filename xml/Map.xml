@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pagina SYSTEM "map.dtd">
+<?xml-stylesheet type="text/xsl" href="map.xsl"?>
+
+<pagina>
+  <apartado id="Marvel">
+  
+    <seccion id="Heroes">
+      <heroe>
+        <nombre>Iron-Man</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Thor</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Capitan America</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Spider-Man</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Lobezno</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Hulk</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Viuda Negra</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Nick Fury</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Bruja Escarlata</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Black Panther</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Dr. Strange</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Star Lord</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Phoenix</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Ojo de Halcon</nombre>
+      </heroe>
+    </seccion>
+    
+    <seccion id="Villanos">
+      <villano>
+        <nombre>Loki</nombre>
+      </villano>
+      <villano>
+        <nombre>Thanos</nombre>
+      </villano>
+      <villano>
+        <nombre>Magneto</nombre>
+      </villano>
+      <villano>
+        <nombre>Craneo Rojo</nombre>
+      </villano>
+      <villano>
+        <nombre>Ultron</nombre>
+      </villano>
+      <villano>
+        <nombre>Duende Verde</nombre>
+      </villano>
+      <villano>
+        <nombre>Dr. Octopus</nombre>
+      </villano>
+      <villano>
+        <nombre>Hela</nombre>
+      </villano>
+      <villano>
+        <nombre>Soldado de Invierno</nombre>
+      </villano>
+      <villano>
+        <nombre>Erik Killmonger</nombre>
+      </villano>
+    </seccion>
+    
+    <seccion id="Historia"></seccion>
+    
+    <seccion id="Peliculas">
+      <pelicula>
+        <nombre>Iron-Man 1</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Iron-Man 2</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Iron-Man 3</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Hulk</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Thor</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Thor: El Mundo Oscuro</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Thor: Ragnarok</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Capitan America: Primer Vengador</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Capitan America: Soldado de Invierno</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Capitan America: Civil War</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Los Vengadores</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Los Vengadores: la Era de Ultron</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Los Vengadores: Infinity War</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Los Vengadores: Endgame</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Guardianes de la Galaxia</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Guardianes de la Galaxia Vol. 2</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Ant-Man</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Ant-Man y la Avispa</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Dr. Strange</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Spider-Man: Homecoming</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Spider-Man: Far From Home</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Black Panther</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Capitana Marvel</nombre>
+      </pelicula>
+    </seccion>
+    
+  </apartado>
+  
+  
+  
+  <apartado id="DC">
+  
+    <seccion id="Heroes">
+      <heroe>
+        <nombre>Superman</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Batman</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Wonder Woman</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Green Lantern</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Flash</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Aquaman</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Arrow</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Raven</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Hawkman</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Catwoman</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Robin</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Shazam</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Beast Boy</nombre>
+      </heroe>
+      <heroe>
+        <nombre>Starfire</nombre>
+      </heroe>
+    </seccion>
+    
+    <seccion id="Villanos">
+      <villano>
+        <nombre>Joker</nombre>
+      </villano>
+      <villano>
+        <nombre>Bane</nombre>
+      </villano>
+      <villano>
+        <nombre>Lex Luthor</nombre>
+      </villano>
+      <villano>
+        <nombre>Harley Quinn</nombre>
+      </villano>
+      <villano>
+        <nombre>Brainiac</nombre>
+      </villano>
+      <villano>
+        <nombre>Two Face</nombre>
+      </villano>
+      <villano>
+        <nombre>The Riddler</nombre>
+      </villano>
+      <villano>
+        <nombre>Pingüino</nombre>
+      </villano>
+      <villano>
+        <nombre>Poison Ivy</nombre>
+      </villano>
+      <villano>
+        <nombre>Flash Reverso</nombre>
+      </villano>
+    </seccion>
+    
+    <seccion id="Historia"></seccion>
+    
+    <seccion id="Peliculas">
+      <pelicula>
+        <nombre>El hombre de acero</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Batman vs. Superman: Amanecer de la Justicia</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Escuadrón Suicida</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Wonder Woman</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Liga de la Justicia</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Aquaman</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Shazam!</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Joker</nombre>
+      </pelicula>
+      <pelicula>
+        <nombre>Birds of Prey (And The Fantabulous Emancipation of one Harley Quinn)</nombre>
+      </pelicula>
+    </seccion>
+    
+  </apartado>
+
+</pagina>

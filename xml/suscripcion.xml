@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE formulario SYSTEM "suscripcion.dtd">
+<?xml-stylesheet type="text/xsl" href="suscripcion.xsl"?>
+
+<formulario>
+    <nombre></nombre>
+    <email></email>
+</formulario>
