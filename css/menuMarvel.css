@@ -220,6 +220,7 @@ header img:hover {
   width: 26vw;
   border: ridge 10px #E7E7E7;
   border-radius: 10px;
+  background-color: black;
 }
 
 .container4 {
